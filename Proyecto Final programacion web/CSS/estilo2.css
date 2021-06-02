@@ -160,3 +160,71 @@ a{
   background-color: #316697;
 
 }
+
+.cajaConsulta{
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  /* background-color: #edf2f7; */
+  display: block;
+}
+
+.consultaCBox{
+  margin-top: 2.5rem;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.cardC{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  overflow-x: auto;
+}
+
+.datosConsulta{
+  border-radius: .5rem;
+  vertical-align: middle;
+  box-shadow: 
+    0 1px 3px 0 rgb(0 0 0 / 10%),
+    0 1px 2px 0 rgb(0 0 0 / 6%);
+
+  overflow: hidden;
+  min-width: 100%;
+  display: inline-block;
+  border-bottom-width: 1px;
+  border-color: #edf2f7;
+  border-color: rgba(237,242,247,var(--border-opacity));
+}
+
+.tablaDatos{
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.texto{
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #718096; 
+  color: rgba(113,128,150,var(--text-opacity));
+  text-align: left;
+  padding-left: .75rem;
+  padding-right: 1.5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  line-height: 1rem;
+  font-size: .75rem;
+  font-weight: 500;
+  border-bottom-width: 1px;
+  border-color: #edf2f7;
+  border-color: rgba(237,242,247,var(--border-opacity));
+  
+}
+
+.bg-white{
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255,255,255,var(--bg-opacity));
+}
