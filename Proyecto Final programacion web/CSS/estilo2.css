@@ -72,3 +72,91 @@ align-items: center;
 a{
   text-decoration: none;
 }
+
+.fondo{
+  background-color: #edf2f7;
+}
+
+.titleAltaC{
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.flexin{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+/* .card{
+  width: 10%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+  overflow-x: auto;
+  border-width: 0;
+
+} */
+
+.cajaForm{
+  border-radius: .5rem;
+  box-shadow: 0 1px 3px 0;
+  overflow: hidden;
+  border-bottom-width: 1px;
+
+}
+
+.bg-white{
+  background-color: #fff;
+}
+
+.p-3{
+  padding: 1.75rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.w-full{
+  width: 100%;
+  text-transform: uppercase;
+  padding: .5rem;
+  margin-top: 1.25rem;
+  font-weight: 700;
+} 
+
+.etiquetaDatos{
+  color: #4a5568;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+  font-weight: 700;
+  display: block;
+}
+
+.cajaDatos{
+  width: 80%;
+  color: #4a5568;
+  color: rgba(74, 85, 104,);
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  line-height: 1.25;
+  border-width: 1px;
+  border-radius: .25rem;
+}
+
+.botonC{
+  cursor: pointer;
+  background-color: rgb(37, 60, 165);
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .5rem;
+  margin-top: 1.25rem;
+  font-weight: 700;
+  background-color: #316697;
+
+}
