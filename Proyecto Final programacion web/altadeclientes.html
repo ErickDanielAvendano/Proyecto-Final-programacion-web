@@ -3,28 +3,34 @@
   <head>
     <meta charset="utf-8">
       <link rel="stylesheet" href="CSS\estilo2.css">
+      <link rel="stylesheet" href="CSS/tailwind.min.css">
     <title>Administracion de clientes</title>
   </head>
-  <body>
+  <body >
     <nav>
-      <div class="GoGasoline">
-        <h1>Bienvenido a GoGasoline</h1>
+      <div class="GoGasoline" >
+        <h1 style="font-size: 30px; margin-top: 20px;">Bienvenido a GoGasoline</h1>
       </div>
       <div class="logoinicio">
-      <button class="botoninicio"><a href="index.html" class="botoninicio"><img src="imagenes\logocasita.png" width="20px" height="20px" >INICIO</a></button>
-      <button class="botoninicio"><a href="Administracion de clientes.html" class="botoninicio"><img src="imagenes\F.png" width="20px" height="20px" >ATRAS</a></button>
+      <button class="botoninicio"><a href="index.html" class="botoninicio">
+        <div class="imgLeft"><img src="imagenes\logocasita.png" width="20px" height="20px" ></div>INICIO</a>
+      </button>
+      <button class="botoninicio"><a href="Administracion de clientes.html" class="botoninicio">
+        <div class="imgLeft"><img src="imagenes\F.png" width="20px" height="20px" ></div>ATRAS</a></button>
       </div>
     </nav>
-    <main class="fondo">
-      <h2 class="titleAltaC">Nuevo Cliente</h2>
-      <div class="flexin">
-          <div class="card">
-              <div class=" cajaForm ">
+<div>
+    <main class="md:w-auto  xl:w-auto px-5 py-10 bg-gray-200">
+      <h2 class="text-3xl font-light text-center">Nuevo Cliente</h2>
+
+      <div class="flex flex-col mt-10 items-center">
+          <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+              <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
                   <form id="formulario" class="bg-white p-3">
                       <div class="mb-4">
-                          <label class="etiquetaDatos" for="nombre">Nombre</label>
+                          <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
                           <input 
-                              class="cajaDatos"
+                              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                               id="nombre"
                               name="nombre"
                               type="text"
@@ -32,9 +38,9 @@
                           />
                       </div>
                       <div class="mb-4">
-                          <label class="etiquetaDatos" for="email">Correo</label>
+                          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo</label>
                           <input 
-                              class="cajaDatos"
+                              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                               id="email"
                               name="email"
                               type="email"
@@ -43,9 +49,9 @@
                       </div>
 
                       <div class="mb-4">
-                          <label class="etiquetaDatos" for="telefono">Teléfono</label>
+                          <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Teléfono</label>
                           <input 
-                              class="cajaDatos"
+                              class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                               id="telefono"
                               name="telefono"
                               type="tel"
@@ -53,15 +59,16 @@
                           />
                       </div>
 
-                        <input
+                      <input
                           type="submit"
-                          class="botonC"
+                          class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold cursor-pointer"
                           value="Agregar Cliente"
-                        />
-                </form>
+                      />
+                  </form>
               </div>
-            </div>
-        </div>
-    </main>
+          </div>
+      </div>
+  </main>
+</div>
   </body>
 </html>
