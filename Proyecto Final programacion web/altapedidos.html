@@ -35,7 +35,7 @@
                             />
                         </div>
                         <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Cantidad</label>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="cantidad">Cantidad</label>
                             <input 
                                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="cantidad"
@@ -43,29 +43,61 @@
                                 type="text"
                                 placeholder="Cantidad Solicitada en litros"
                             />
-                        </div>
-  
-                        <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="Tipo">Tipo</label>
-                            <select class="flex-1 bg-gray-100 p-3 appearance-none cursor-pointer" id="Tipo">
-                              <option value> - Seleccionar -</option>
-                              <option value = "1"> Premium</option>
-                              <option value = "2"> Regular</option>
+                         </div>
+                          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="">
+                              <label class="block text-gray-700 text-sm font-bold mb-2 " for="Tipo">Tipo</label>
+                              <select class="flex-1 bg-gray-100 py-2 border px-3 appearance-none cursor-pointer" id="Tipo">
+                                <option value> - Seleccionar -</option>
+                                <option value = "1"> Premium</option>
+                                <option value = "2"> Regular</option>
 
-                            </select>
-                            <input 
-                                class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="telefono"
-                                name="telefono"
-                                type="tel"
-                                placeholder="Tipo"
-                            />
+                              </select>
+                          </div>
+
+                          <div class="mb-4" >
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="Fecha">Fecha</label>
+
+                              <input type="date" id="fecha" name="fecha" class="form-control border">
+                          
+                          </div>
                         </div>
+
+                        <div class="mb-4">
+                          <label class="block text-gray-700 text-sm font-bold mb-2 py-5" for="estacion">Estacion</label>
+                          <input 
+                              class="appearance-none border rounded w-full px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" style="transform: translate(4px, -33px);"
+                              id="estacion"
+                              name="estacion"
+                              type="text"
+                              placeholder="Numero de estación"
+                          />
+                      </div>
+
+                      <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="hora">Hora programada</label>
+                        <input 
+                            class="flex-1 bg-gray-100 py-2 border px-3 appearance-none "
+                            id="time"
+                            name="time"
+                            type="time"
+                        />
+                    </div>
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Persona autoriza</label>
+                      <input 
+                          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          id="personaA"
+                          name="personaA"
+                          type="text"
+                          placeholder="Nombre de la persona que autoriza"
+                      />
+                  </div>
   
                         <input
                             type="submit"
                             class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold cursor-pointer"
-                            value="Agregar Cliente"
+                            value="Agregar Pedido"
                         />
                     </form>
                 </div>
